@@ -7,12 +7,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"models"
-	"pkg/gredis"
-	"pkg/logging"
-	"pkg/setting"
-	"routers"
-	"pkg/util"
+	"github.com/SuperAvalonHome/gin-api/models"
+	"github.com/SuperAvalonHome/gin-api/pkg/gredis"
+	"github.com/SuperAvalonHome/gin-api/pkg/logging"
+	"github.com/SuperAvalonHome/gin-api/pkg/setting"
+	"github.com/SuperAvalonHome/gin-api/routers"
+	"github.com/SuperAvalonHome/gin-api/pkg/util"
 )
 
 func init() {
@@ -26,7 +26,7 @@ func init() {
 // @title Golang Gin API
 // @version 1.0
 // @description An example of gin
-// @termsOfService https://github.com/SuperAvalonHome/gin-api
+// @termsOfService https://github.com/SuperAvalonHome/gin-api/go-gin-example
 // @license.name MIT
 // @license.url https://github.com/SuperAvalonHome/gin-api/blob/master/LICENSE
 func main() {
