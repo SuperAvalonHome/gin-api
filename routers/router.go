@@ -31,6 +31,12 @@ func InitRouter() *gin.Engine {
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	r.POST("/upload", api.UploadImage)
 
+
+	//更新指定标签
+	r.GET("/sodexo/user/:id", v1.GetSodexoUser)
+	r.GET("/sodexo/trade/:order_id", v1.GetSodexoTrade)
+	r.GET("/sodexo/refund/:order_id", v1.GetSodexoRefund)
+
 	apiv1 := r.Group("/api/v1")
 	apiv1.Use(jwt.JWT())
 	{

@@ -1,4 +1,4 @@
-module github.com/EDDYCJY/go-gin-example
+module github.com/SuperAvalonHome/gin-api
 
 go 1.13
 
